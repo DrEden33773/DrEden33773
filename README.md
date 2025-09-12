@@ -25,4 +25,4 @@ Here are some ideas to get you started:
 - ⚙️ Familiar with `OS/DB` related `performance-critical` applications, and backend development
 - 📘 Use `Python/Rust/C++` for most, and `C/Java/Kotlin/JS` as well
 - 👯 Looking forward to making friends and collaborating with them
-- 📫 How to reach me: [My personal email](edwardwang33773@gmail.com)
+- 📫 How to reach me: `edwardwang33773@gmail.com`
