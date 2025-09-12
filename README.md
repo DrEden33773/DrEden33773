@@ -19,7 +19,8 @@ Here are some ideas to get you started:
 
 ![Eden's GitHub stats](https://github-readme-stats.vercel.app/api?username=DrEden33773&show_icons=true&theme=dracula)
 
-- 🔭 I’m currently working on `LLM/Agent/ML/DL/RL` related affairs (Backend Developer + Algorithm Learner)
+- 🔭 I’m currently working on `LLM/Agent/ML/DL/RL` related affairs
+  - (As a `backend developer` & `algorithm learner`)
 - 🌱 Learning at `HKU`
 - ⚙️ Familiar with `OS/DB` related `performance-critical` applications, and backend development
 - 📘 Use `Python/Rust/C++` for most, and `C/Java/Kotlin/JS` as well
