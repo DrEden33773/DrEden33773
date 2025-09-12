@@ -19,10 +19,10 @@ Here are some ideas to get you started:
 
 ![Eden's GitHub stats](https://github-readme-stats.vercel.app/api?username=DrEden33773&show_icons=true&theme=dracula)
 
-- 🔭 I’m currently working on `LLM / Agent / ML / DL / RL` related affairs
+- 🔭 I’m currently working on `LLM/Agent/ML/DL/RL` related affairs
   - (mainly as a backend developer, also an algorithm learner/freshman)
 - 🌱 Learning at `HKU`
 - ⚙️ Familiar with `OS/DB` related `performance-critical` applications, and backend development
-- 📘 Use `Python / Rust / C++` for most, and `C / Java / Kotlin / JS` as well
+- 📘 Use `Python/Rust/C++` for most, and `C/Java/Kotlin/JS` as well
 - 👯 Looking forward to making friends and collaborating with them
 - 📫 How to reach me: [My personal email](edwardwang33773@gmail.com)
