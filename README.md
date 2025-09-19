@@ -22,7 +22,7 @@ Here are some ideas to get you started:
 - 🔭 I’m currently working on `LLM/Agent/ML/DL/RL` related affairs
   - (As a `backend developer` & `algorithm learner`)
 - 🌱 Studying at `HKU`
-- ⚙️ Familiar with `OS/DB` related `performance-critical` applications, and backend development
+- ⚙️ Familiar with `OS/DB` and other `performance-critical` applications, and backend development
 - 📘 Use `Python/Rust/C++` for most, and `C/Java/Kotlin/JS` as well
 - 👯 Looking forward to making friends and collaborating with them
 - 📫 How to reach me: `edwardwang33773@gmail.com`
