@@ -21,8 +21,10 @@ Here are some ideas to get you started:
 ![Eden's GitHub stats](https://github-readme-stats.vercel.app/api?username=DrEden33773&show_icons=true&theme=dracula)
 -->
 
+> Try to be a pioneer of `Agentic Engineering`
+
 - 🔭 I’m currently working on `LLM/Agent/ML/DL/RL` related affairs
-  - (As a `backend developer` & `algorithm learner`)
+  <!-- - (As a `backend developer` & `algorithm learner`)-->
 - 🌱 Studying at `HKU`
 - ⚙️ Familiar with `OS/DB` and other `performance-critical` applications, and backend development
 - 📘 Use `Python/Rust/C++` for most, and `C/Java/Kotlin/JS` as well
