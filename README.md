@@ -15,11 +15,8 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<!--
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DrEden33773&layout=compact&langs_count=3&theme=dracula)
-
 ![Eden's GitHub stats](https://github-readme-stats.vercel.app/api?username=DrEden33773&show_icons=true&theme=dracula)
--->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=DrEden33773&layout=compact&langs_count=3&theme=dracula)
 
 ### Try to be a pioneer of `Agentic Engineering`
 
