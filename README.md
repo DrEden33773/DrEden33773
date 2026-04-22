@@ -22,8 +22,8 @@ Here are some ideas to get you started:
 
 - 🔭 I’m currently working on `LLM Agents` & `ML/DL/RL` related affairs
   <!-- - (As a `backend developer` & `algorithm learner`)-->
-- 🌱 Studying at `HKU`, Pursuing a `Master`'s degree in `Computer Science`
+- 🌱 Studying at `HKU`, pursuing a `Master`'s degree in `Computer Science`
 - ⚙️ Familiar with `OS/DB` and other `performance-critical` applications, and backend development
-- 📘 Use `Python/Rust` for most, and `C++/C/Java/Kotlin` as well, grew high interest in `TypeScript/Go` recently
+- 📘 Use `Python/Rust` for most, and `C++/C/Java/Kotlin` as well, grew a high interest in `TypeScript/Go` recently
 - 👯 Looking forward to making friends and collaborating with them
 - 📫 How to reach me: `edwardwang33773@gmail.com`
