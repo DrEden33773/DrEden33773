@@ -1,9 +1,16 @@
 <!-- markdownlint-disable MD041 -->
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <img src="assets/hero-light.svg" width="100%" alt="Eden — AI Agent Engineer. Building agents from the inside out.">
-</picture>
+<a href="assets/hero-light.svg#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/hero-mobile-light.svg">
+    <img src="assets/hero-light.svg" width="100%" alt="Eden — AI Agent Engineer. Building agents from the inside out.">
+  </picture>
+</a>
+<a href="assets/hero-dark.svg#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/hero-mobile-dark.svg">
+    <img src="assets/hero-dark.svg" width="100%" alt="Eden — AI Agent Engineer. Building agents from the inside out.">
+  </picture>
+</a>
 
 <br>
 
@@ -25,11 +32,16 @@ Currently deep in coding agents, with one foot in runtimes and the other in prod
 
 ## On my workbench
 
-<a href="https://github.com/DrEden33773/adam-agent">
+<a href="https://github.com/DrEden33773/adam-agent#gh-light-mode-only">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/project-adam-agent-mobile.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="assets/project-adam-agent-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/project-adam-agent-mobile-light.svg">
     <img src="assets/project-adam-agent-light.svg" width="100%" alt="adam-agent — Creator and maintainer. View repository and GitHub stars.">
+  </picture>
+</a>
+<a href="https://github.com/DrEden33773/adam-agent#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/project-adam-agent-mobile-dark.svg">
+    <img src="assets/project-adam-agent-dark.svg" width="100%" alt="adam-agent — Creator and maintainer. View repository and GitHub stars.">
   </picture>
 </a>
 
@@ -37,21 +49,31 @@ A coding agent you can look inside. My main workshop for **tool approvals, recov
 
 I also run paired repository-repair evaluations and check graders against raw test logs. [Experiments, corrections, and results](https://github.com/DrEden33773/adam-agent/blob/main/docs/agent-evaluation-evidence.md).
 
-<a href="https://github.com/AI-Eden/eden-skills">
+<a href="https://github.com/AI-Eden/eden-skills#gh-light-mode-only">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/project-eden-skills-mobile.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="assets/project-eden-skills-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/project-eden-skills-mobile-light.svg">
     <img src="assets/project-eden-skills-light.svg" width="100%" alt="eden-skills — Creator and maintainer. View repository and GitHub stars.">
+  </picture>
+</a>
+<a href="https://github.com/AI-Eden/eden-skills#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/project-eden-skills-mobile-dark.svg">
+    <img src="assets/project-eden-skills-dark.svg" width="100%" alt="eden-skills — Creator and maintainer. View repository and GitHub stars.">
   </picture>
 </a>
 
 A Rust CLI that makes Skills easier to manage across **40+ agent tools**, locally and in Docker. Declarative installs, bounded concurrency, and a `doctor` / `repair` loop when things drift. Built through a human-led, multi-agent workflow.
 
-<a href="https://github.com/KaiOnCode/QuanTable">
+<a href="https://github.com/KaiOnCode/QuanTable#gh-light-mode-only">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/project-QuanTable-mobile.svg">
-    <source media="(prefers-color-scheme: dark)" srcset="assets/project-QuanTable-dark.svg">
+    <source media="(max-width: 600px)" srcset="assets/project-QuanTable-mobile-light.svg">
     <img src="assets/project-QuanTable-light.svg" width="100%" alt="QuanTable — Core contributor. View repository and GitHub stars.">
+  </picture>
+</a>
+<a href="https://github.com/KaiOnCode/QuanTable#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/project-QuanTable-mobile-dark.svg">
+    <img src="assets/project-QuanTable-dark.svg" width="100%" alt="QuanTable — Core contributor. View repository and GitHub stars.">
   </picture>
 </a>
 
@@ -59,11 +81,18 @@ A team-built quantitative research workbench. My contributions connect **natural
 
 ## Tools of the trade
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/stack-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
-  <img src="assets/stack-light.svg" width="100%" alt="TypeScript, Python, Rust, Java, Kotlin, React, Next.js, FastAPI, Spring Boot, Node.js, PostgreSQL, Redis, Docker, Linux, GitHub Actions.">
-</picture>
+<a href="assets/stack-light.svg#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/stack-mobile-light.svg">
+    <img src="assets/stack-light.svg" width="100%" alt="TypeScript, Python, Rust, Java, Kotlin, React, Next.js, FastAPI, Spring Boot, Node.js, PostgreSQL, Redis, Docker, Linux, GitHub Actions.">
+  </picture>
+</a>
+<a href="assets/stack-dark.svg#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/stack-mobile-dark.svg">
+    <img src="assets/stack-dark.svg" width="100%" alt="TypeScript, Python, Rust, Java, Kotlin, React, Next.js, FastAPI, Spring Boot, Node.js, PostgreSQL, Redis, Docker, Linux, GitHub Actions.">
+  </picture>
+</a>
 
 TypeScript for agents and interfaces. Python for services and evaluations. Rust for tooling. **Java / Spring Boot for backends; Kotlin for coroutine pipelines.**
 
@@ -79,23 +108,35 @@ TypeScript for agents and interfaces. Python for services and evaluations. Rust 
 
 ## Building in public
 
-<a href="https://github.com/DrEden33773?tab=overview">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/github-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg">
-  <img src="assets/github-light.svg" width="100%" alt="GitHub contributions, stars on personally owned non-fork repositories, original public repositories, followers, and contribution heatmap. Updated date appears on the card.">
-</picture>
+<a href="https://github.com/DrEden33773?tab=overview#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/github-mobile-light.svg">
+    <img src="assets/github-light.svg" width="100%" alt="GitHub contributions, stars on personally owned non-fork repositories, original public repositories, followers, and contribution heatmap. Updated date appears on the card.">
+  </picture>
+</a>
+<a href="https://github.com/DrEden33773?tab=overview#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/github-mobile-dark.svg">
+    <img src="assets/github-dark.svg" width="100%" alt="GitHub contributions, stars on personally owned non-fork repositories, original public repositories, followers, and contribution heatmap. Updated date appears on the card.">
+  </picture>
 </a>
 
 <sub>Repository counts and star totals cover personally owned public non-fork repositories. Project cards show each project's own stars. [Data snapshot](data/github.json).</sub>
 
 <br>
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/contact-mobile.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg">
-  <img src="assets/contact-light.svg" width="100%" alt="Let's build something useful.">
-</picture>
+<a href="assets/contact-light.svg#gh-light-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/contact-mobile-light.svg">
+    <img src="assets/contact-light.svg" width="100%" alt="Let's build something useful.">
+  </picture>
+</a>
+<a href="assets/contact-dark.svg#gh-dark-mode-only">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/contact-mobile-dark.svg">
+    <img src="assets/contact-dark.svg" width="100%" alt="Let's build something useful.">
+  </picture>
+</a>
 
 <p align="center">
   <br>

@@ -1,0 +1,24 @@
+[project]
+name = "eden-profile"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["fonttools==4.60.0", "brotli==1.2.0"]
+
+[dependency-groups]
+dev = ["basedpyright", "ruff"]
+
+[tool.uv]
+package = false
+
+[tool.basedpyright]
+typeCheckingMode = "standard"
+pythonVersion = "3.12"
+include = ["generate-assets.py", "scripts"]
+venvPath = "."
+venv = ".venv"
+
+[tool.ruff]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "ANN"]

@@ -1,0 +1,11 @@
+/* GitHub's documented theme-only URL fragments, mirrored for local previews. */
+:root[data-color-mode="light"] [href$="#gh-dark-mode-only"],
+:root[data-color-mode="dark"] [href$="#gh-light-mode-only"] {
+  display: none;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-color-mode="auto"] [href$="#gh-light-mode-only"] { display: none; }
+}
+@media (prefers-color-scheme: light) {
+  :root[data-color-mode="auto"] [href$="#gh-dark-mode-only"] { display: none; }
+}
