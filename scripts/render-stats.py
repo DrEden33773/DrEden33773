@@ -1,7 +1,7 @@
 """Render GitHub snapshot as themed, responsive SVGs; never fabricate missing data."""
 import json
 from datetime import date
-from artwork import Canvas, ROOT
+from artwork import Canvas, ROOT, combine_mobile_variants
 
 DATA = json.loads((ROOT/'data'/'github.json').read_text())
 ASSETS = ROOT/'assets'
@@ -67,3 +67,6 @@ for theme in ('light','dark'):
     for i,repo in enumerate(DATA['projects']):
         for mobile in (False,True): project(theme,i,repo['repository'],repo['stars'],mobile)
 print('Rendered GitHub panels and project cards from the saved snapshot.')
+
+for stem in ("github", "project-adam-agent", "project-eden-skills", "project-QuanTable"):
+    combine_mobile_variants(stem)

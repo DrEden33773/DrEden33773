@@ -1,7 +1,6 @@
 <!-- markdownlint-disable MD041 -->
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/hero-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/hero-mobile-light.svg">
+  <source media="(max-width: 600px)" srcset="assets/hero-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
   <img src="assets/hero-light.svg" width="100%" alt="Eden — AI Agent Engineer. Building agents from the inside out.">
 </picture>
@@ -28,8 +27,7 @@
 
 <a href="https://github.com/DrEden33773/adam-agent">
   <picture>
-    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/project-adam-agent-mobile-dark.svg">
-    <source media="(max-width: 600px)" srcset="assets/project-adam-agent-mobile-light.svg">
+    <source media="(max-width: 600px)" srcset="assets/project-adam-agent-mobile.svg">
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-adam-agent-dark.svg">
     <img src="assets/project-adam-agent-light.svg" width="100%" alt="adam-agent — Creator and maintainer. View repository and GitHub stars.">
   </picture>
@@ -41,8 +39,7 @@
 
 <a href="https://github.com/AI-Eden/eden-skills">
   <picture>
-    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/project-eden-skills-mobile-dark.svg">
-    <source media="(max-width: 600px)" srcset="assets/project-eden-skills-mobile-light.svg">
+    <source media="(max-width: 600px)" srcset="assets/project-eden-skills-mobile.svg">
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-eden-skills-dark.svg">
     <img src="assets/project-eden-skills-light.svg" width="100%" alt="eden-skills — Creator and maintainer. View repository and GitHub stars.">
   </picture>
@@ -52,8 +49,7 @@
 
 <a href="https://github.com/KaiOnCode/QuanTable">
   <picture>
-    <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/project-QuanTable-mobile-dark.svg">
-    <source media="(max-width: 600px)" srcset="assets/project-QuanTable-mobile-light.svg">
+    <source media="(max-width: 600px)" srcset="assets/project-QuanTable-mobile.svg">
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-QuanTable-dark.svg">
     <img src="assets/project-QuanTable-light.svg" width="100%" alt="QuanTable — Core contributor. View repository and GitHub stars.">
   </picture>
@@ -64,8 +60,7 @@
 ## 常用工具
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/stack-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/stack-mobile-light.svg">
+  <source media="(max-width: 600px)" srcset="assets/stack-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg">
   <img src="assets/stack-light.svg" width="100%" alt="TypeScript, Python, Rust, Java, Kotlin, React, Next.js, FastAPI, Spring Boot, Node.js, PostgreSQL, Redis, Docker, Linux, GitHub Actions.">
 </picture>
@@ -86,8 +81,7 @@
 
 <a href="https://github.com/DrEden33773?tab=overview">
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/github-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/github-mobile-light.svg">
+  <source media="(max-width: 600px)" srcset="assets/github-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/github-dark.svg">
   <img src="assets/github-light.svg" width="100%" alt="GitHub contributions, stars on personally owned non-fork repositories, original public repositories, followers, and contribution heatmap. Updated date appears on the card.">
 </picture>
@@ -98,8 +92,7 @@
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="assets/contact-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="assets/contact-mobile-light.svg">
+  <source media="(max-width: 600px)" srcset="assets/contact-mobile.svg">
   <source media="(prefers-color-scheme: dark)" srcset="assets/contact-dark.svg">
   <img src="assets/contact-light.svg" width="100%" alt="一起做点有用的东西。">
 </picture>

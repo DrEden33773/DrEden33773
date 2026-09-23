@@ -58,3 +58,36 @@ class Canvas:
         svg = f'<svg xmlns="http://www.w3.org/2000/svg" width="{self.width}" height="{self.height}" viewBox="0 0 {self.width} {self.height}" role="img" aria-labelledby="title desc"><title id="title">{escape(self.title)}</title><desc id="desc">{escape(self.desc)}</desc><defs>{defs}</defs>' + ''.join(self.parts) + '</svg>\n'
         Path(path).write_text(svg, encoding='utf-8')
 
+
+def combine_mobile_variants(stem):
+    """Keep viewport selection outside GitHub's color-scheme source rewriting.
+
+    The mobile SVG inherits the embedding page's color-scheme. Its two groups
+    contain the existing mobile artwork unchanged, with IDs namespaced.
+    """
+    import re
+    import xml.etree.ElementTree as ET
+    paths = [ROOT / 'assets' / f'{stem}-mobile-{theme}.svg' for theme in ('light', 'dark')]
+    roots = [ET.parse(path).getroot() for path in paths]
+    assert roots[0].attrib['viewBox'] == roots[1].attrib['viewBox']
+    groups = []
+    for theme, path in zip(('light', 'dark'), paths):
+        svg = path.read_text()
+        body = svg[svg.index('>') + 1:svg.rindex('</svg>')]
+        for ident in set(re.findall(r'\bid="([^"]+)"', body)):
+            replacement = f'{theme}-{ident}'
+            body = body.replace(f'id="{ident}"', f'id="{replacement}"')
+            body = body.replace(f'href="#{ident}"', f'href="#{replacement}"')
+            body = body.replace(f'url(#{ident})', f'url(#{replacement})')
+        groups.append(f'<g class="variant-{theme}">{body}</g>')
+    attrs = roots[0].attrib
+    title = escape(roots[0].find('{http://www.w3.org/2000/svg}title').text or stem)
+    result = (
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{attrs["width"]}" height="{attrs["height"]}" '
+        f'viewBox="{attrs["viewBox"]}" role="img" aria-labelledby="responsive-title">'
+        f'<title id="responsive-title">{title}</title>'
+        '<style>.variant-dark{display:none}@media(prefers-color-scheme:dark){'
+        '.variant-light{display:none}.variant-dark{display:inline}}</style>'
+        + ''.join(groups) + '</svg>\n'
+    )
+    (ROOT / 'assets' / f'{stem}-mobile.svg').write_text(result)

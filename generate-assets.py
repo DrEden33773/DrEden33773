@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 import xml.etree.ElementTree as ET
 sys.path.insert(0, str(Path(__file__).resolve().parent / 'scripts'))
-from artwork import Canvas, ROOT
+from artwork import Canvas, ROOT, combine_mobile_variants
 
 ASSETS = ROOT / 'assets'
 ASSETS.mkdir(exist_ok=True)
@@ -121,3 +121,6 @@ for theme in ('light','dark'):
     button(theme,'contact-zh','联系我',142,primary=True,large=True)
     button(theme,'contact-repos','Repositories',194,large=True)
 print('Generated hero, stack, navigation, and contact components.')
+
+for stem in ("hero", "stack", "contact"):
+    combine_mobile_variants(stem)
