@@ -14,6 +14,7 @@ on:
       - 'uv.lock'
 permissions:
   contents: write
+  issues: write
 concurrency:
   group: profile-data
   cancel-in-progress: false
@@ -50,4 +51,21 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m 'chore: refresh profile data'
             git push
+          fi
+      # A red scheduled run is otherwise invisible: the profile just keeps
+      # serving yesterday's numbers. Surface it as an issue instead.
+      - name: Report refresh failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          body="The profile refresh failed on $(date -u +%Y-%m-%d). Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --search 'in:title "Profile refresh failed"' \
+            --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --repo "$GITHUB_REPOSITORY" --body "$body"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" \
+              --title "Profile refresh failed" --body "$body"
           fi

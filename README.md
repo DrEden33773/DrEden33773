@@ -111,17 +111,17 @@ TypeScript for agents and interfaces. Python for services and evaluations. Rust 
 <a href="https://github.com/DrEden33773?tab=overview#gh-light-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/github-mobile-light.svg">
-    <img src="assets/github-light.svg" width="100%" alt="GitHub contributions, stars on personally owned non-fork repositories, original public repositories, followers, and contribution heatmap. Updated date appears on the card.">
+    <img src="assets/github-light.svg" width="100%" alt="Stars and original repositories on personally owned non-fork repositories, contributions and followers, and the contribution heatmap. Updated date appears on the card.">
   </picture>
 </a>
 <a href="https://github.com/DrEden33773?tab=overview#gh-dark-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/github-mobile-dark.svg">
-    <img src="assets/github-dark.svg" width="100%" alt="GitHub contributions, stars on personally owned non-fork repositories, original public repositories, followers, and contribution heatmap. Updated date appears on the card.">
+    <img src="assets/github-dark.svg" width="100%" alt="Stars and original repositories on personally owned non-fork repositories, contributions and followers, and the contribution heatmap. Updated date appears on the card.">
   </picture>
 </a>
 
-<sub>Repository counts and star totals cover personally owned public non-fork repositories. Project cards show each project's own stars. [Data snapshot](data/github.json).</sub>
+<sub>**Most of my repositories are forks** of upstream projects I read and track — the card below counts only repositories I personally own, and project cards show each project's own stars. [Data snapshot](data/github.json).</sub>
 
 <br>
 

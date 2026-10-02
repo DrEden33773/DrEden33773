@@ -240,7 +240,9 @@ def main() -> None:
             ("nav-en", "English", 104),
             ("nav-zh", "简体中文", 104),
             ("nav-projects", "Projects", 110),
+            ("nav-projects-zh", "项目", 88),
             ("nav-stack", "Stack", 88),
+            ("nav-stack-zh", "技术栈", 104),
             ("nav-github", "GitHub", 100),
             ("nav-hello", "Contact me", 132),
         ]:

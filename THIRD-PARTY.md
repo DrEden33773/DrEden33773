@@ -9,7 +9,7 @@ Original font files are bundled for reproducible editing. Generated graphics use
 
 ## Chinese button glyphs
 
-`Buttons-CJK.ttf` is a modified subset of Droid Sans Fallback containing only the glyphs used by the Chinese language/contact buttons. Copyright 2006–2010 Google Corp.; Apache-2.0. [License](fonts/Buttons-CJK-LICENSE.txt) · [Upstream notice](fonts/Buttons-CJK-NOTICE.txt). The subset is outlined into SVGs, just like the Latin fonts.
+`Buttons-CJK.ttf` is a modified subset of Droid Sans Fallback containing only the glyphs used by the Chinese buttons (简体中文, 项目, 技术栈, 联系我). Copyright 2006–2010 Google Corp.; Apache-2.0. [License](fonts/Buttons-CJK-LICENSE.txt) · [Upstream notice](fonts/Buttons-CJK-NOTICE.txt). The subset is outlined into SVGs, just like the Latin fonts.
 
 ## Technology icons
 

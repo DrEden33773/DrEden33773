@@ -16,8 +16,8 @@
 
 <p align="center">
   <a href="README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/button-nav-en-dark.svg"><img src="assets/button-nav-en-light.svg" width="104" height="44" alt="English"></picture></a>
-  <a href="#我的工作台"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/button-nav-projects-dark.svg"><img src="assets/button-nav-projects-light.svg" width="110" height="44" alt="项目"></picture></a>
-  <a href="#常用工具"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/button-nav-stack-dark.svg"><img src="assets/button-nav-stack-light.svg" width="88" height="44" alt="技术栈"></picture></a>
+  <a href="#我的工作台"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/button-nav-projects-zh-dark.svg"><img src="assets/button-nav-projects-zh-light.svg" width="88" height="44" alt="项目"></picture></a>
+  <a href="#常用工具"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/button-nav-stack-zh-dark.svg"><img src="assets/button-nav-stack-zh-light.svg" width="104" height="44" alt="技术栈"></picture></a>
   <a href="#持续构建"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/button-nav-github-dark.svg"><img src="assets/button-nav-github-light.svg" width="100" height="44" alt="GitHub"></picture></a>
   <a href="mailto:edwardwang33773@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/button-nav-contact-zh-dark.svg"><img src="assets/button-nav-contact-zh-light.svg" width="104" height="44" alt="联系我"></picture></a>
 </p>
@@ -111,17 +111,17 @@
 <a href="https://github.com/DrEden33773?tab=overview#gh-light-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/github-mobile-light.svg">
-    <img src="assets/github-light.svg" width="100%" alt="GitHub contributions, stars on personally owned non-fork repositories, original public repositories, followers, and contribution heatmap. Updated date appears on the card.">
+    <img src="assets/github-light.svg" width="100%" alt="Stars and original repositories on personally owned non-fork repositories, contributions and followers, and the contribution heatmap. Updated date appears on the card.">
   </picture>
 </a>
 <a href="https://github.com/DrEden33773?tab=overview#gh-dark-mode-only">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/github-mobile-dark.svg">
-    <img src="assets/github-dark.svg" width="100%" alt="GitHub contributions, stars on personally owned non-fork repositories, original public repositories, followers, and contribution heatmap. Updated date appears on the card.">
+    <img src="assets/github-dark.svg" width="100%" alt="Stars and original repositories on personally owned non-fork repositories, contributions and followers, and the contribution heatmap. Updated date appears on the card.">
   </picture>
 </a>
 
-<sub>仓库数和 Stars 汇总仅统计个人名下的公开非 fork 仓库；项目卡单独展示各项目的 Stars。[数据快照](data/github.json)。</sub>
+<sub>我的主页里**大多数仓库是 fork** —— 我读和跟踪的上游项目；下方卡片只统计我个人名下的仓库，项目卡单独展示各项目的 Stars。[数据快照](data/github.json)。</sub>
 
 <br>
 

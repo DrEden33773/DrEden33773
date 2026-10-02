@@ -12,13 +12,13 @@ ASSETS = ROOT / "assets"
 
 
 def stats(theme: str, mobile: bool) -> None:
-    w, h = (520, 550) if mobile else (960, 365)
+    w, h = (520, 460) if mobile else (960, 436)
     c = Canvas(
         w,
         h,
         theme,
         "Eden on GitHub",
-        "GitHub API snapshot. Contributions over the past year; stars and repository counts cover personally owned public non-fork repositories.",
+        "GitHub API snapshot. Stars and original repository counts cover personally owned public non-fork repositories; contributions and followers come from the same account.",
     )
     p = c.p
     c.rect(0, 0, w, h, p["bg"], 14)
@@ -27,45 +27,61 @@ def stats(theme: str, mobile: bool) -> None:
     updated = DATA["updated_at"][:10]
     if not mobile:
         c.text(f"updated {updated} UTC", w - 26, 39, 12, p["muted"], anchor="end")
-    values = [
-        (
-            DATA["contribution_calendar"]["totalContributions"],
-            "Contributions",
-            "past year",
-        ),
-        (DATA["owned_repository_stars"], "Stars", "owned, non-fork repos"),
+    # Stars and original repositories lead: they are the only numbers here that
+    # a third party has to give you. Contribution counts are trivially inflated
+    # by forks and daily commits, so they drop to the secondary row.
+    headline: list[tuple[int, str, str, str]] = [
+        (DATA["owned_repository_stars"], "Stars", "owned, non-fork repos", p["cyan"]),
         (
             DATA["original_public_repositories"],
             "Original repos",
             "public, personally owned",
+            p["blue"],
         ),
-        (DATA["followers"], "Followers", "on GitHub"),
     ]
-    for i, (value, label, note) in enumerate(values):
-        x = 26 + (i % 2) * 248 if mobile else 26 + i * 232
-        y = 119 + (i // 2) * 104 if mobile else 126
-        c.text(
-            f"{value:,}", x, y, 45, p["blue"] if i % 2 == 0 else p["cyan"], display=True
-        )
-        c.text(label, x, y + 27, 18 if mobile else 15, p["ink"])
-        c.text(note, x, y + 47, 13 if mobile else 11, p["muted"])
+    headline_size, headline_step = (44, 244) if mobile else (58, 472)
+    headline_y = 124 if mobile else 145
+    for i, (value, label, note, color) in enumerate(headline):
+        x = 26 + i * headline_step
+        c.text(f"{value:,}", x, headline_y, headline_size, color, display=True)
+        c.text(label, x, headline_y + 31, 17 if mobile else 20, p["ink"])
+        c.text(note, x, headline_y + 50, 12, p["muted"])
+    secondary: list[tuple[int, str]] = [
+        (
+            DATA["contribution_calendar"]["totalContributions"],
+            "contributions past year",
+        ),
+        (DATA["followers"], "followers on GitHub"),
+    ]
+    secondary_y = 205 if mobile else 234
+    for i, (value, label) in enumerate(secondary):
+        x = 26 if mobile else 26 + i * 472
+        y = secondary_y + i * 34 if mobile else secondary_y
+        width = c.text(f"{value:,}", x, y, 24, p["ink"], display=True)
+        c.text(label, x + width + 12, y, 13, p["muted"])
     weeks = DATA["contribution_calendar"]["weeks"]
     if mobile:
         weeks = weeks[-26:]
-    y0 = 343 if mobile else 221
-    step = 17
-    c.text(
-        "Last 26 weeks" if mobile else "Contribution calendar / past year",
-        26,
-        y0 - 22,
-        13,
-        p["muted"],
-    )
     colors = (
         [p["empty"], "#CAC5F4", "#9F92E5", "#7761CE", "#5540A9"]
         if theme == "light"
         else [p["empty"], "#42416C", "#66609B", "#9786CB", "#C2AEF2"]
     )
+    legend_y = 277 if mobile else 272
+    c.text(
+        "Last 26 weeks" if mobile else "Contribution calendar / past year",
+        26,
+        legend_y,
+        13,
+        p["muted"],
+    )
+    if not mobile:
+        c.text("less", w - 160, legend_y, 10, p["muted"])
+        c.text("more", w - 26, legend_y, 10, p["muted"], anchor="end")
+        for i, color in enumerate(colors):
+            c.rect(w - 136 + i * 16, legend_y - 11, 11, 11, color, 2)
+    y0 = 295 if mobile else 290
+    step = 17
     levels = [
         "NONE",
         "FIRST_QUARTILE",
@@ -90,10 +106,6 @@ def stats(theme: str, mobile: bool) -> None:
         start = weeks[0]["contributionDays"][0]["date"]
         end = weeks[-1]["contributionDays"][-1]["date"]
         c.text(f"{start} - {end}", 26, h - 18, 11, p["muted"])
-        c.text("less", w - 177, h - 18, 10, p["muted"])
-        for i, color in enumerate(colors):
-            c.rect(w - 140 + i * 16, h - 28, 11, 11, color, 2)
-        c.text("more", w - 24, h - 18, 10, p["muted"], anchor="end")
     c.save(ASSETS / f"github-{'mobile-' if mobile else ''}{theme}.svg")
 
 
